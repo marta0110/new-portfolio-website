@@ -1,0 +1,667 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+/* MOBILE VERSION */
+
+/* main page*/
+
+.Lefttsidenav {
+    display: none;
+}
+
+.Rightsidenav {
+    display: none;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 60vw;
+}
+
+.header .name {
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    font-weight: 100;
+    font-family: "Poiret One";
+    justify-self: center;
+    font-size: 1.5em;
+}
+
+.header .logo {
+    justify-self: center;
+}
+
+.header .main {
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    justify-self: center;
+}
+
+.desript {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.animation .gif {
+    display: none;
+}
+
+.container .Rnav {
+    display: none;
+
+}
+
+.container .Lnav {
+    display: none;
+
+}
+
+.animation .mob_ver img {
+    max-width: 100vw;
+    height: auto;
+}
+
+
+.footer {
+    margin-top: 2vh;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.footer hr {
+    height: 1px;
+    border-top: 0.8px solid gray;
+    width: 70vw;
+}
+
+.footer footer {
+    padding-top: 2vh;
+    width: 100vw;
+    color: black;
+    font-weight: 100;
+    font-family: "Poiret One";
+    margin: 0 auto;
+    font-size: 1em;
+    margin-left: 10vw;
+
+}
+
+/* animation Lorelei Heckmann letters */
+
+.wrapper-letters_name {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    font-family: "Poiret One";
+    line-height: 1.4;
+    color: #2F2F2F;
+    -webkit-transition: color .8s ease;
+    transition: color .8s ease;
+    cursor: pointer;
+}
+
+
+.wrapper-letters_name span {
+    display: inline-block;
+    transition: all 200ms ease;
+}
+
+.animate-letter_name {
+    animation-name: MoveLetters_name;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+}
+
+@keyframes MoveLetters_name {
+
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-13px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+
+.wrapper-letters_name:hover {
+    color: #f15d62;
+    z-index: 2;
+}
+
+
+.wrapper-letters_name:link {
+    color: #525152;
+}
+
+.wrapper-letters_name:visited {
+    color: #A3A2A3;
+}
+
+.wrapper-letters_name:before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 120px;
+    bottom: 0%;
+    left: 90%;
+    visibility: hidden;
+    background-color: #E6E6E5;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    z-index: -2;
+}
+
+
+.wrapper-letters_name:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(2);
+    transform: scaleX(1.5);
+
+
+}
+
+
+/* animation MENU letters */
+
+.wrapper-letters {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Poiret One";
+    line-height: 1.4;
+    color: #606060;
+    -webkit-transition: color .8s ease;
+    transition: color .8s ease;
+    cursor: pointer;
+}
+
+.wrapper-letters span {
+    display: inline-block;
+    transition: all 200ms ease;
+}
+
+.animate-letter {
+    animation-name: MoveLetters;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+}
+
+@keyframes MoveLetters {
+
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-13px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.wrapper-letters:hover {
+    color: #f15d62;
+}
+
+
+.wrapper-letters:link {
+    color: #525152;
+}
+
+.wrapper-letters:visited {
+    color: #A3A2A3;
+}
+
+.wrapper-letters:before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    bottom: 0%;
+    left: 0%;
+    visibility: hidden;
+    background-color: #f15d62;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+.wrapper-letters:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 0.5;
+}
+
+
+
+.sidenav {
+    visibility: visible;
+    height: 85vh;
+    top: 15vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    background-color: #E6E6E5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 2rem;
+
+}
+
+.sidenav a {
+    padding: 80px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 5vh;
+    color: dimgrey;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    align-content: center;
+    font-family: "Poiret One";
+    font-weight: 100;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.sidenav a:hover {
+    color: #f15d62;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+
+/* Animation typewriter */
+
+.desript {
+    width: 100vw;
+    height: auto;
+    font-weight: 100;
+    font-size: 2vw;
+    font-family: "Poiret One";
+    color: #f15d62;
+    line-height: 1.4;
+
+}
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 210%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.line-2 {
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 220%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+
+.anim-typewriter2 {
+    animation-delay: 4s;
+    animation: typewriter2 4s steps(44) 1s 1 normal both,
+    blinkTextCursor2 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blinkTextCursor2 {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+/* MOBILE VERSION ABOUT PAGE */
+
+
+
+/* TABLET VERSION */
+
+/* main page*/
+
+@media only screen and (min-width: 600px) {
+
+    .header .main {
+        justify-self: end;
+        padding-right: 2vw;
+        padding-top: 4vh;
+    }
+    .desript {
+        margin-top: 5vh;
+    }
+    .line-1 {
+        font-size: 150%;
+    }
+
+    .line-2 {
+        font-size: 150%;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 100vw;
+
+    }
+    .mob_ver {
+        display: none;
+    }
+    .animation .gif {
+        display: block;
+    }
+
+    .animation .gif img {
+        max-width: 100vw;
+        height: auto;
+
+    }
+
+    .header .logo {
+        width: 12vw;
+        height: auto;
+        padding-top: 1vh;
+    }
+
+    .header .name {
+        padding-left: 2vw;
+        font-size: 1.5em;
+        padding-bottom: 2vh;
+    }
+    .header .main {
+        padding-right: 5vw;
+        padding-bottom: 2vh;
+    }
+
+    .footer footer {
+        margin-left: 20vw;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+
+    /*right nav*/
+    .Rightsidenav {
+        display: block;
+        height: 77vh;
+        top: 23vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        background-color: #FFD367;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 2rem;
+
+    }
+
+    .Rightsidenav a {
+        text-decoration: none;
+        font-size: 4vh;
+        color: white;
+        display: block;
+        transition: 0.4s;
+        text-align: center;
+        align-content: center;
+        font-family: "Wire One";
+        font-weight: 100;
+        margin-top: 35vh;
+        letter-spacing: 5px;
+
+
+    }
+
+    .Rightsidenav a:hover {
+        color: dimgrey;
+    }
+
+
+    .Lefttsidenav {
+        display: block;
+        height: 75vh;
+        top: 25vh;
+        width: 0;
+        position: absolute;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        background-color: #3C5BA9;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 2rem;
+        margin-right: -2vw;
+
+    }
+
+    .Lefttsidenav a {
+        text-decoration: none;
+        font-size: 4vh;
+        color: white;
+        display: block;
+        transition: 0.4s;
+        text-align: center;
+        align-content: center;
+        font-family: "Wire One";
+        font-weight: 100;
+        letter-spacing: 5px;
+        margin-top: 33vh;
+
+
+    }
+
+    .Lefttsidenav a:hover {
+        color: gray;
+    }
+
+
+    /* left and right navigation */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 100vw;
+
+    }
+
+    .container .Rnav {
+        width: 15vw;
+        height: auto;
+        display: block;
+        align-self: center;
+        cursor: pointer;
+    }
+
+    .container .Lnav {
+        align-self: center;
+        width: 15vw;
+        height: auto;
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        cursor: pointer;
+        justify-self: end;
+        margin-right: -2vw;
+        float: right;
+
+    }
+    .container .Rnav .Rline {
+
+        height: 1px;
+        border-top: 1px solid black;
+        width: 10vw;
+
+    }
+
+    .container .Rnav p {
+        writing-mode: vertical-rl;
+        text-orientation: upleft;
+        padding-left: 10vw;
+        font-weight: 100;
+        font-family: "Wire One";
+        font-size: 2.5em;
+    }
+    .container .Lnav .Lline {
+
+        height: 1px;
+        border-top: 1px solid black;
+        width: 10vw;
+        margin-right: 0;
+        float: right;
+    }
+
+    .container .Lnav p {
+        writing-mode: vertical-rl;
+        text-orientation: upleft;
+        font-weight: 100;
+        font-family: "Wire One";
+        font-size: 2.5em;
+    }
+
+
+    .animation .gif img {
+        width: 70vw;
+        height: auto;
+        justify-self: center;
+
+    }
+
+
+    .line-1 {
+        font-size: 2vw;
+    }
+
+    .line-2 {
+        font-size: 2vw;
+    }
+
+
+
+    .header .name {
+        justify-self: start;
+        padding-left: 2vw;
+
+    }
+
+    .header .main {
+        padding-right: 5vw;
+
+    }
+
+    .header .logo {
+        padding-top: 1vh;
+        width: 5vw;
+        height: auto;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 1100px) {
+    .animation .gif img {
+        width: auto;
+        height: 80vh;
+
+    }
+
+    .line-1 {
+        font-size: 1.5vw;
+    }
+
+    .line-2 {
+        font-size: 1.5vw;
+    }
+
+    .footer hr {
+        width: 40vw;
+        margin: 0 auto;
+
+    }
+
+    .footer footer {
+        margin-left: 30vw;
+    }
