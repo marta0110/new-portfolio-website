@@ -1,3 +1,13 @@
+let aboutPage = document.querySelector(".aboutPage");
+
+
+ document.getElementById("myLeftSidenav").onclick = function () {
+        location.href = "about.html";
+        aboutPage.classList.add("moveToRight");
+        
+    };
+
+
 
 
 //Menu letters //
@@ -143,14 +153,21 @@ js: $( document ).ready(function() {
 
 //main nav//
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100vw";
+    document.getElementById("mySidenav").style.height = "100vh";
+
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.height = "0";
 }
 
 
+
+function open() {
+
+    sidenav.classList.add("sidenav");
+    
+}
 //left nav//
 
 function openLNav() {
@@ -215,6 +232,22 @@ js: $( document ).ready(function() {
 
 });
 
+
+function hvr(dom, action)
+{
+    if (action == 'in')
+    {
+        $(dom).find("[col=g]").css("display", "none");
+        $(dom).find("[col=b]").css("display", "inline-block");
+    }
+
+    else
+    {
+        $(dom).find("[col=b]").css("display", "none");
+        $(dom).find("[col=g]").css("display", "inline-block");
+       
+    }
+}
 
 
 

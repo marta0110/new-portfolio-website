@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Lorelei Heckmann</title>
-    <link rel="stylesheet" href="style1.css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
-     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Wire+One" rel="stylesheet"> 
-     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
-   
-   
-
-<link rel="apple-touch-icon" sizes="152x152" href="favicon_package_v0.16/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
-<link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="theme-color" content="#ffffff">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Wire+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
-  
-  
-  <div id="pt-main" class="pt-perspective">
-	<div class="pt-page pt-page-1">
-		<h1><span>A collection of</span><strong>Page</strong> Transitions</h1>
-	</div>
-	<div class="pt-page pt-page-2"><!-- ... --></div>
-	<!-- ... -->
-</div>
-   <div class="header">
+<body class="aboutPage">
+    <div class="box"></div>
+    <div class="header">
+        <div onclick="closeNav()" onmouseleave="closeNav()" id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="portfolio.html">  Portfolio</a></li>
+                <li> <a href="about_me.html">About me</a></li>
+            </ul>
+        </div>
+        <div onmouseover="openNav()" class="main">
+            <span style="cursor:pointer" id="menu_burger" onmouseover="hvr(this, 'out')" onmouseleave="hvr(this, 'in')">
+               <img src="images/menu_second.png"  class="menu_second" col="b">
+               <img src="images/menu_first.png" class="menu_first" style="display:none" col="g">
+           </span>
+            <span style="font-size:25px;cursor:pointer" class="wrapper-letters">
+                <span id="m">M </span>
+            <span id="e">e </span>
+            <span id="n">n </span>
+            <span id="u">u </span>
+            </span>
+        </div>
         <div class="name">
-           <a href="index.html">
-           <span style="font-size:30px;cursor:pointer" onclick="openIntro()" class="wrapper-letters_name">
-            <span id="l">l </span>
-            <span id="o">o </span>
-            <span id="r">r </span>
-            <span id="e3">e </span>
+            <a href="index.html">
+            <span style="font-size:25px;cursor:pointer" onclick="openIntro()" class="wrapper-letters_name">
+             <span id="l">l </span>
+             <span id="o">o </span>
+             <span id="r">r </span>
+             <span id="e3">e </span>
              <span id="l1">l </span>
              <span id="e1">e </span>
              <span id="i">i </span>
@@ -56,95 +64,157 @@
              <span id="n2">n </span>
             </span>
             </a>
-   
-     </div>
-      
-     <div class="logo">
-            <img class="logo" src="images/logo.png" alt="logo">
-     </div>
-      
-     <div onclick="closeNav()" onmouseleave="closeNav()" id="mySidenav" class="sidenav">
-           <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
-           <ul>
-            
-            <li> <a href="index.html"> Home </a></li>
-            <li> <a href="portfolio.html"> Portfolio</a></li>
-            <li> <a href="about_me.html">About me</a></li>
-           </ul>
-     </div>
-    
-     <div  class="main">
-            <span style="font-size:30px;cursor:pointer" onmouseover="openNav()" class="wrapper-letters">
-            <span id="m">M </span>
-            <span id="e">E </span>
-            <span id="n">N </span>
-            <span id="u">U </span>
-            </span> 
-  </div>
-       
-</div>
-   
+        </div>
+    </div>
+    <div class="container">
+        <div onmouseover="openRNav()" class="Rnav">
+            <div class="Rline"></div>
+            <p> Portfolio</p>
+        </div>
+        <div onclick="openAbout()" onmouseleave="closeRNav()" id="myRightSidenav" class="Rightsidenav">
+            <ul>
+                <li> <a href="portfolio.html"> See my projects! </a></li>
+            </ul>
+        </div>
+        <div onclick="closeLNav()" onmouseleave="closeLNav()" id="myLeftSidenav" class="Lefttsidenav">
+            <ul>
+                <li> <a href="index.html"> Let's go to <br>the homepage </a></li>
+            </ul>
+        </div>
+        <div class="about_me">
+            <img src="images/me.jpg" alt="me">
+            <div class="icons">
+                <div onclick="location.href='https://www.behance.net/martagrzeg3f37'" class="behance"></div>
+                <div onclick="location.href='https://github.com/marta0110'" class="github"></div>
+                <div onclick="location.href='https://codepen.io/LoreleiHeckmann/'" class="codepen"></div>
+                <div onclick="location.href='https://www.linkedin.com/in/marta-grzegowska-a40a28137/'" class="linkedin"></div>
+                <div onclick="sendEmail()" class="mail"></div>
+            </div>
+            <div class="description">
+                <h1> Marta Karolina Grzegowska</h1>
+                <p> I'm a graphic designer and front-end developer. I believe that digital design in connection with technology has a great power in a modern world. Live "online" becomes something which we consider as normal. <br><br> I'm here to help you communicate with society and build your brand integrity.</p>
+            </div>
+        </div>
+        <div onmouseover="openLNav()" class="Lnav">
+            <p> Home</p>
+            <div class="Lline"></div>
+        </div>
+    </div>
  
- <div class="container">
- 
-     <div onmouseover="openRNav()" class="Rnav">
-        <div class="Rline"></div> 
-        <p> Portfolio</p>
-  </div>
-    
-      <div onclick="openAbout()" onmouseleave="closeRNav()" id="myRightSidenav" class="Rightsidenav">
+    <div class="skills">
+          <h2 class="header_skills">SKILLS</h2>
+        <div class="chemistry">
+            <div class="bubbles">
+                <img class="circle1" src="images/b1.png" alt="elements">
+                <img class="circle2" src="images/b2.png" alt="elements">
+                <img class="circle3" src="images/b3.png" alt="elements">
+            </div>
+            <img class="first" src="images/ampulka_1.png" alt="creativity">
+            <div class="chemistry_d">
+                <p>Creativity</p>
+            </div>
+        </div>
+        <div class="chemistry">
+            <div class="bubbles">
+                <img class="circle4" src="images/b4.png" alt="elements">
+                <img class="circle5" src="images/b5.png" alt="elements">
+                <img class="circle6" src="images/b6.png" alt="elements">
+            </div>
 
-           <ul>
-            <li> <a> See my projects! </a></li>
-           </ul>
-     </div>
-     
-       <div onclick="closeLNav()" onmouseleave="closeLNav()" id="myLeftSidenav" class="Lefttsidenav">
+            <img class="img" src="images/ampulka_2.png" alt="creativity">
+            <div class="chemistry_d">
+                <p>AI</p>
+            </div>
+        </div>
+        <div class="chemistry">
+            <div class="bubbles">
+                <img class="circle7" src="images/b7.png" alt="elements">
+                <img class="circle8" src="images/b8.png" alt="elements">
+                <img class="circle9" src="images/b9.png" alt="elements">
+            </div>
+            <img class="img" src="images/ampulka_3.png" alt="creativity">
+            <div class="chemistry_d">
+                <p>AP</p>
+            </div>
+        </div>
+        <div class="chemistry">
+            <div class="bubbles">
+                <img class="circle10" src="images/b19.png" alt="elements">
+                <img class="circle11" src="images/b20.png" alt="elements">
+                <img class="circle12" src="images/b21.png" alt="elements">
+            </div>
+            <img class="img" src="images/ampulka_7.png" alt="creativity">
+            <div class="chemistry_d">
+                <p>ID</p>
+            </div>
+        </div>
+        <div class="chemistry">
+            <div class="bubbles">
+                <img class="circle13" src="images/b16.png" alt="elements">
+                <img class="circle14" src="images/b17.png" alt="elements">
+                <img class="circle15" src="images/b18.png" alt="elements">
+            </div>
+            <img class="img" src="images/ampulka_6.png" alt="creativity">
+            <div class="chemistry_d">
+                <p>XD</p>
+            </div>
+        </div>
+        <div class="chemistry">
+            <div class="bubbles">
+                <img class="circle16" src="images/b10.png" alt="elements">
+                <img class="circle17" src="images/b11.png" alt="elements">
+                <img class="circle18" src="images/b12.png" alt="elements">
+            </div>
+            <img class="img" src="images/ampulka_4.png" alt="creativity">
+            <div class="chemistry_d">
+                <p>HTML</p>
+            </div>
+        </div>
+        <div class="chemistry">
+            <div class="bubbles">
+                <img class="circle19" src="images/b13.png" alt="elements">
+                <img class="circle20" src="images/b14.png" alt="elements">
+                <img class="circle21" src="images/b15.png" alt="elements">
+            </div>
+            <img class="img" src="images/ampulka_5.png" alt="creativity">
+            <div class="chemistry_d">
+                <p>JS</p>
+            </div>
+        </div>
+        <div class="chemistry">
+            <div class="bubbles">
+                <img class="circle22" src="images/b22.png" alt="elements">
 
-           <ul>
-            <li> <a href="about.html"> Let's go to <br>the main page </a></li>
-           </ul>
-     </div>
-     
+                <img class="circle23" src="images/b23.png" alt="elements">
 
-     
-     <div class="about_me"> 
-     
-     <img src="images/me.jpg" alt="me">
-     
-     <div class="description">
-          <h1> Marta Karolina Grzegowska</h1>
-         <p>  I'm a graphic designer and front-end developer. I believe that digital design in connection with technology has a great power in a modern world. Live "online" becomes something which we consider as normal. <br><br>
-       I'm here to help you communicate with society and build your brand integrity.</p>
-       
-     </div>
-     
-       
+                <img class="circle24" src="images/b24.png" alt="elements">
+            </div>
+            <img class="img" src="images/ampulka_8.png" alt="creativity">
 
-     </div>
-     
-     
-     
-     
- 
-      <div onmouseover="openLNav()" class="Lnav">
-      
-       <p> Home</p>
-            <div class="Lline"></div> 
-         
-     </div>
-   
-      
-     </div>
-     <div class="footer">
-     <hr/>
-      <footer> Marta Karolina Grzegowska 2018</footer>
-      </div>
+            <div class="chemistry_d">
+                <p>CSS</p>
+            </div>
+        </div>
+    </div>
 
-     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <link href="jquery.page.css" rel="stylesheet">
-    
+
+    <div class="footer">
+        <hr/>
+        <footer> Marta Karolina Grzegowska 2018</footer>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="about.js">
+
+
+    </script>
     <script src="script.js">
+
+
     </script>
 </body>
+
 </html>
