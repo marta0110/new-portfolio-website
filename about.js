@@ -64,3 +64,23 @@ function sendEmail()
 {
     window.location = "mailto:marta.grzegowska@gmail.com";
 }
+
+$(document).ready(function() {
+   
+    $('.arrow').click(function(){
+        $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+        return false;
+    });
+
+});
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("arrowAbout").style.display = "block";
+  } else {
+    document.getElementById("arrowAbout").style.display = "none";
+  }
+  prevScrollpos = currentScrollPos;
+}
