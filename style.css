@@ -528,100 +528,157 @@ body {
 
 /*portfolio*/
 
-.float{
+.float {
     display: none;
 }
-.box_portfolio{
+
+.box_portfolio {
     display: none;
 }
-.box_portfolio1{
-      display: none;
+
+.box_portfolio2 {
+    display: none;
 }
 
-.box_portfolio3{
-      display: none;
+.box_portfolio3 {
+    display: none;
 }
 
-.box_portfolio4{
-      display: none;
+.box_portfolio4 {
+    display: none;
 }
 
-.box_portfolio5{
-      display: none;
+.box_portfolio5 {
+    display: none;
 }
 
-.box_content{
+.box_content {
     display: grid;
-    width:100vw;
-    height:auto;
-    grid-template-columns: 1fr;  
+    width: 100vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    padding-bottom: 3vh;
+
 }
-.box_content h1{
+
+.box_content h1 {
     font-family: "Wire One", sans-serif;
-    font-size: 10vw; 
+    font-size: 13vw;
     width: 100vw;
-   text-align: center;
+    text-align: center;
     padding-bottom: 5vh;
+
 }
-.box_content img{
+
+.box_content img {
     width: 100vw;
     height: auto;
+    padding-bottom: 2vh;
+
 }
 
-.box_content h2{
+.portfolio {
     font-family: "Poiret One", sans-serif;
-    font-size: 7vw;
 }
 
-.box_content2{
+.portfolio h2 {
+    font-size: 9vw;
+}
+
+.portfolio h3 {
+    font-size: 6vw;
+}
+
+.portfolio p {
+    font-size: 5vw;
+}
+
+.box_content2 {
     display: grid;
-    width:100vw;
-    height:auto;
-    grid-template-columns: 1fr;  
-}
-
-.box_content2 h2{
-    font-family: "Poiret One", sans-serif;
-    font-size: 7vw;
-}
-
-.box_content2 img{
     width: 100vw;
     height: auto;
+    grid-template-columns: 1fr;
+    padding-bottom: 3vh;
 }
 
-.box_content3{
+width: 100vw;
+height: auto;
+padding-bottom: 2vh;
+
+
+.box_content2 img {
+    order: 1;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 2vh;
+}
+
+.box_content2 h2 {
+    order: 2;
+}
+
+.box_content2 .noah {
+    order: 3;
+}
+
+.box_content3 {
     display: grid;
-    width:100vw;
-    height:auto;
-    grid-template-columns: 1fr;  
-}
-
-.box_content3 h2{
-    font-family: "Poiret One", sans-serif;
-    font-size: 7vw;
-}
-.box_content3 img{
     width: 100vw;
     height: auto;
+    grid-template-columns: 1fr;
+    padding-bottom: 3vh;
 }
 
-.box_content4{
+.box_content3 img {
+
+    width: 100vw;
+    height: auto;
+    padding-bottom: 2vh;
+}
+
+
+
+.box_content4 {
     display: grid;
-    width:100vw;
-    height:auto;
-    grid-template-columns: 1fr;  
-}
-
-.box_content h4{
-    font-family: "Poiret One", sans-serif;
-    font-size: 7vw;
-}
-.box_content4 img{
     width: 100vw;
     height: auto;
+    grid-template-columns: 1fr;
 }
 
+.box_content4 img {
+
+    width: 100vw;
+    height: auto;
+    padding-bottom: 2vh;
+}
+
+.box_content5 {
+    display: grid;
+    width: 100vw;
+    height: auto;
+    grid-template-columns: 1fr;
+}
+
+.box_content5 img {
+
+    width: 100vw;
+    height: auto;
+    padding-bottom: 2vh;
+}
+
+
+
+.box_content5 img {
+    order: 1;
+}
+
+.box_content5 h2 {
+    order: 2;
+}
+
+.box_content5 .ratoong {
+    order: 3;
+}
 
 /* TABLET VERSION */
 
@@ -870,6 +927,71 @@ body {
         font-size: 1.2em;
         padding-left: 1vw;
     }
+
+
+    /* portfolio */
+    .portfolio h1 {
+        text-align: center;
+        width: 80vw;
+    }
+    .portfolio h2 {
+        font-size: 7vw;
+    }
+    .portfolio h3 {
+        font-size: 5vw;
+    }
+    .portfolio p {
+        font-size: 4vw;
+    }
+    .box_content {
+        width: 80vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .box_content img {
+        width: 80vw;
+        height: auto;
+    }
+    .box_content2 {
+        width: 80vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .box_content2 img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .box_content3 {
+        width: 80vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .box_content3 img {
+        width: 80vw;
+        height: auto;
+    }
+    .box_content4 {
+        width: 80vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .box_content4 img {
+        width: 80vw;
+        height: auto;
+    }
+    .box_content5 {
+        width: 80vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .box_content5 img {
+        width: 80vw;
+        height: auto;
+    }
+
 
 }
 
@@ -1141,9 +1263,6 @@ body {
 
     .about_me .description h1 {
         width: 35vw;
-
-
-
     }
 
     .about_me .description p {
@@ -1184,10 +1303,417 @@ body {
         font-size: 1.2em;
 
     }
+    
+    
+    /*portfolio page*/
+    .box_portfolio {
+        width: 65vw;
+        height: 70vh;
+        background-color: #fed366;
+        left: 0;
+        position: absolute;
+        display: block;
+        z-index: 3;
+        top: 20vh;
+    }
+
+
+    .container {
+        position: relative;
+    }
+    .container .box_content {
+        z-index: 5;
+        width: 80vw;
+        height: auto;
+        padding-left: 20vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container .box_content .huset_expl {
+        width: 20vw;
+        padding-top: 30vh;
+        -webkit-animation: text 1s;
+        /* Safari 4+ */
+        -moz-animation: text 2s;
+        /* Fx 5+ */
+        -o-animation: text 2s;
+        /* Opera 12+ */
+        animation: text 2s;
+        transition-delay: 1s;
+    }
+
+    @-webkit-keyframes text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-o-keyframes text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .portfolio h2 {
+        font-size: 6vw;
+    }
+
+    .portfolio h3 {
+        font-size: 3vw;
+        padding-top: 1vh;
+    }
+
+
+    .portfolio p {
+        font-size: 2vw;
+        padding-top: 1vh;
+    }
+
+    .container .box_content h1 {
+        font-family: "Wire One";
+        font-size: 7vw;
+        width: 40vw;
+        height: 5vh;
+        justify-self: end;
+        padding-left: 20vw;
+
+    }
+    .container .box_content img {
+        width: 30vw;
+        height: auto;
+        cursor: pointer;
+        padding-top: 25vh;
+        transition: transform 1.5s;
+
+    }
+
+    .huset_expl {
+        display: none;
+    }
+    .container .box_content img:hover + .huset_expl {
+        display: block;
+
+    }
+
+    .container .box_content img:hover {
+        transform: scale(1.2);
+    }
+
+
+    .section2 {
+        width: 100vw;
+        height: auto;
+        position: relative;
+    }
+    .section2 .box_portfolio2 {
+        width: 65vw;
+        height: 85vh;
+        background-color: #3a5aaa;
+        right: 0;
+        top: -5vh;
+        display: block;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .section2 .box_content2 {
+        width: 80vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding-top: 10vh;
+    }
+
+    .section2 .box_content2 img {
+        width: 40vw;
+        height: auto;
+        cursor: pointer;
+        transition: transform 1.5s;
+        z-index: 5;
+        right: 0;
+        transition: transform 1.5s;
+
+    }
+
+    .section2 .box_content2 img:hover + .noah {
+        display: block;
+
+    }
+
+    .section2 .box_content2 img:hover {
+        transform: scale(1.2);
+    }
+
+    .noah {
+        order: 3;
+        padding-left: 45vw;
+        font-family: "Poiret One";
+        font-size: 1.5vw;
+        z-index: 2;
+        width: 60vw;
+        display: none;
+        margin-top: -20vh;
+        
+
+    }
+    
+      .section3 {
+        width: 100vw;
+        height: 70vh;
+        position: relative;
+
+    }
+    
+     .box_portfolio3 {
+        width: 60vw;
+        height: 70vh;
+        background-color: #ebebeb;
+        display: block;
+        position: absolute;
+        margin-left: 15vw;
+        top: 13vh;
+        z-index: 2;
+         top: -2vh;
+    }
+
+    .section2 .box_content2 h2 {
+        padding-left: 20vw;
+        width: 40vw;
+        height: auto;
+        z-index: 2;
+    }
+
+  
+
+    .box_content2 img {
+    order: 2;
+}
+
+.box_content2 h2 {
+    order: 1;
+}
+
+.box_content2 .ratoong {
+    order: 3;
+}
+
+
+    .section3 .box_content3 {
+        width: 80vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding-top: 15vh;
+        padding-left: 20vw;
+        grid-gap: 5vw;
+    }
+
+    .section3 .box_content3 img {
+        width: 35vw;
+        height: auto;
+        cursor: pointer;
+        transition: transform 1.5s;
+        padding-top: 5vh;
+        z-index: 5;
+    }
+
+    .section3 .box_content3 img:hover {
+        transform: scale(1.2);
+    }
+
+    .section3 .box_content3 img:hover + .faux {
+        display: block;
+    }
+
+    .section3 .box_content3 h2 {
+        width: 20vw;
+        height: auto;
+        z-index: 3;
+        padding-bottom: 5vh;
+
+    }
+
+    .section3 .box_content3 .faux {
+        font-size: 1.5vw;
+        width: 20vw;
+        z-index: 7;
+        animation-name: textFaux;
+        animation-duration: 2s;
+        transition-delay: 0.5s;
+        display: none;
+    }
+
+    @keyframes textFaux {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .section4 {
+        width: 100vw;
+        height: 80vh;
+        position: relative;
+
+
+    }
+
+    .section4 .box_portfolio4 {
+        width: 65vw;
+        height: 80vh;
+        background-color: #f1485b;
+        display: block;
+        position: absolute;
+        top: -5vh;
+
+    }
+
+
+    .section4 .box_content4 {
+        z-index: 5;
+        width: 80vw;
+        height: auto;
+        padding-left: 10vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 20vh;
+    }
+
+    .section4 .box_content4 img {
+        width: 40vw;
+        height: auto;
+        cursor: pointer;
+        transition: transform 1.5s;
+        z-index: 6;
+        cursor: pointer;
+
+    }
+
+    .section4 .box_content4 .wedding {
+        width: 30vw;
+        height: auto;
+        z-index: 7;
+        grid-column: 2;
+        padding-left: 2vw;
+        margin-top: -20vh;
+
+
+
+    }
+
+    .section4 .box_content4 img:hover {
+        transform: scale(1.2);
+    }
+
+
+    .section4 .box_content4 h2 {
+        width: 40vw;
+        height: auto;
+        z-index: 7;
+        padding-top: 5vh;
+        padding-left: 2vw;
+
+    }
+
+    .section5 {
+        width: 100vw;
+        height: 80vh;
+        position: relative;
+
+
+    }
+
+    .section5 .box_portfolio5 {
+        width: 65vw;
+        height: 85vh;
+        background-color: #B8860B;
+        right: 0;
+        top: -5vh;
+        display: block;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .section5 .box_content5 {
+        width: 70vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 0 auto;
+    }
+
+    .section5 .box_content5 h2 {
+        z-index: 5;
+        margin-left: -2vw;
+    
+    }
+    .section5 .box_content5 img {
+        width: 40vw;
+        height: auto;
+        cursor: pointer;
+        transition: transform 1.5s;
+        z-index: 5;
+
+
+    }
+.box_content5 img {
+    order: 2;
+}
+
+.box_content5 h2 {
+    order: 1;
+}
+
+.box_content5 .ratoong {
+    order: 3;
+}
+
+    .section5 .box_content5 img:hover + .ratoong {
+        display: block;
+
+    }
+
+    .section5 .box_content5 img:hover {
+        transform: scale(1.2);
+    }
+
+    .ratoong {
+        order: 3;
+        z-index: 2;
+        width: 40vw;
+        display: none;
+        margin-top: -20vh;
+        margin-left: 10vw;
+    }
 
 }
 
 @media only screen and (min-width: 1100px) {
+
 
 
     /*main page*/
@@ -1767,144 +2293,41 @@ body {
         margin-top: 55vh;
 
     }
-
-
-
-    /*portfolio page*/
-    .box_portfolio {
-        width: 65vw;
-        height: 80vh;
-        background-color: #fed366;
-        left: 0;
-        position: absolute;
-        display: block;
-        z-index: 3;
-        top: 20vh;
+    
+       /*portfolio page*/
+    
+    
+    
+    .portfolio h2 {
+        font-size: 4vw;
     }
 
-    .container {
-        position: relative;
-    }
-    .container .box_content {
-        z-index: 5;
-        width: 80vw;
-        height: auto;
-        padding-left: 20vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .portfolio h3 {
+        font-size: 2vw;
+        padding-top: 1vh;
     }
 
-    .container .box_content .huset_expl {
-        width: 20vw;
-        padding-top: 40vh;
-        font-family: "Poiret One";
-        -webkit-animation: text 1s;
-        /* Safari 4+ */
-        -moz-animation: text 2s;
-        /* Fx 5+ */
-        -o-animation: text 2s;
-        /* Opera 12+ */
-        animation: text 2s;
-        transition-delay: 1s;
-    }
 
-    @-webkit-keyframes text {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @-moz-keyframes text {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @-o-keyframes text {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @keyframes text {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    .container .box_content .huset_expl h2 {
-        font-size: 5vw;
-    }
-
-    .container .box_content .huset_expl p {
+    .portfolio p {
         font-size: 1.5vw;
-    }
-    .container .box_content h1 {
-        font-family: "Wire One";
-        font-size: 7vw;
-        width: 40vw;
-        height: 5vh;
-        justify-self: end;
-        padding-left: 20vw;
-
-    }
-    .container .box_content img {
-        width: 30vw;
-        height: auto;
-        cursor: pointer;
-        padding-top: 25vh;
-        transition: transform 1.5s;
-
+        padding-top: 1vh;
     }
 
-    .container .box_content img:hover {
-        transform: scale(1.2);
+    .box_portfolio{
+        height: 90vh;
+        
     }
-    .section2 {
-        width: 100vw;
-        height: auto;
-        position: relative;
+    
+    .box_portfolio2{
+        margin-top: 10vh;
     }
-    .section2 .box_portfolio2 {
-        width: 65vw;
-        height: 85vh;
-        background-color: #3a5aaa;
-        right: 0;
-        top: -5vh;
-        display: block;
-        position: absolute;
-        z-index: 2;
+     
+    .section2 img{
+        margin-top: 10vh;
     }
 
-    .section2 .box_content2 {
-        width: 80vw;
-        height: auto;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        padding-top: 10vh;
-    }
-
-    .section2 .box_content2 img {
-        width: 40vw;
-        height: auto;
-        cursor: pointer;
-        transition: transform 1.5s;
-        z-index: 5;
-        right: 0;
-        transition: transform 1.5s;
-
-    }
-
-    .section2 .box_content2 img:hover {
-        transform: scale(1.2);
+    .section2 h2{
+        margin-top: 10vh;
     }
     .noah {
         order: 3;
@@ -1914,18 +2337,10 @@ body {
         z-index: 2;
         width: 40vw;
         margin-top: -7vh;
+        display: none;
 
     }
-
-    .section2 .box_content2 h2 {
-        font-size: 4vw;
-        padding-left: 20vw;
-        width: 40vw;
-        height: auto;
-        font-family: "Poiret One";
-        z-index: 2;
-    }
-
+    
     .section3 {
         width: 100vw;
         height: 70vh;
@@ -1933,6 +2348,17 @@ body {
 
     }
 
+    .box_content2 img {
+    order: 2;
+}
+
+.box_content2 h2 {
+    order: 1;
+}
+
+.box_content2 .ratoong {
+    order: 3;
+}
     .box_portfolio3 {
         width: 60vw;
         height: 70vh;
@@ -1940,60 +2366,11 @@ body {
         display: block;
         position: absolute;
         margin-left: 15vw;
-        top: 2vh;
+        top: 13vh;
         z-index: 2;
     }
 
-    .section3 .box_content3 {
-        width: 80vw;
-        height: auto;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        padding-top: 10vh;
-        padding-left: 20vw;
-        grid-gap: 5vw;
-    }
 
-    .section3 .box_content3 img {
-        width: 35vw;
-        height: auto;
-        cursor: pointer;
-        transition: transform 1.5s;
-        z-index: 5;
-    }
-
-    .section3 .box_content3 img:hover {
-        transform: scale(1.2);
-    }
-
-    .section3 .box_content3 h2 {
-        font-size: 4vw;
-        width: 20vw;
-        height: auto;
-        font-family: "Poiret One";
-        z-index: 3;
-        padding-bottom: 5vh;
-
-    }
-
-    .section3 .box_content3 .faux {
-        font-family: "Poiret One";
-        font-size: 1.5vw;
-        width: 20vw;
-        z-index: 7;
-        animation-name: textFaux;
-        animation-duration: 2s;
-        transition-delay: 0.5s;
-    }
-
-    @keyframes textFaux {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
 
     .section4 {
         width: 100vw;
@@ -2009,7 +2386,6 @@ body {
         background-color: #f1485b;
         display: block;
         position: absolute;
-        top: -5vh;
 
     }
 
@@ -2018,7 +2394,7 @@ body {
         z-index: 5;
         width: 80vw;
         height: auto;
-        padding-left: 35vw;
+        padding-left: 25vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-top: 20vh;
@@ -2034,42 +2410,112 @@ body {
 
     }
 
+    .section4 .box_content4 .wedding {
+        width: 30vw;
+        height: auto;
+        z-index: 7;
+        grid-column: 2;
+        padding-left: 10vw;
+        margin-top: -20vh;
+
+
+
+    }
+
     .section4 .box_content4 img:hover {
         transform: scale(1.2);
     }
 
+
     .section4 .box_content4 h2 {
-        font-size: 4vw;
         width: 40vw;
         height: auto;
-        font-family: "Poiret One";
         z-index: 7;
         padding-top: 5vh;
+        padding-left: 10vw;
+
     }
-    
-    .section4 .box_content4 .wedding{
-         font-size: 1.5vw;
-        width: 20vw;
+
+    .section5 {
+        width: 100vw;
+        height: 80vh;
+        position: relative;
+
+
+    }
+
+    .section5 .box_portfolio5 {
+        width: 65vw;
+        height: 85vh;
+        background-color: #B8860B;
+        right: 0;
+        top: -5vh;
+        display: block;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .section5 .box_content5 {
+        width: 70vw;
         height: auto;
-        font-family: "Poiret One";
-        z-index: 7;
-        grid-column: 2;
-        padding-left: 5vw;
-       margin-top:  -20vh;
-        
- 
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 0 auto;
     }
-    
-    .float{
-        width:100vw;
-        height:100vh;
+
+    .section5 .box_content5 h2 {
+        z-index: 5;
+        padding-left: 5vw;
+    }
+    .section5 .box_content5 img {
+        width: 40vw;
+        height: auto;
+        cursor: pointer;
+        transition: transform 1.5s;
+        z-index: 5;
+
+
+    }
+.box_content5 img {
+    order: 2;
+}
+
+.box_content5 h2 {
+    order: 1;
+}
+
+.box_content5 .ratoong {
+    order: 3;
+}
+
+    .section5 .box_content5 img:hover + .ratoong {
+        display: block;
+
+    }
+
+    .section5 .box_content5 img:hover {
+        transform: scale(1.2);
+    }
+
+    .ratoong {
+        order: 3;
+        z-index: 2;
+        width: 40vw;
+        display: none;
+        margin-top: -40vh;
+        margin-left: 10vw;
+    }
+
+    .float {
+        width: 100vw;
+        height: 100vh;
         position: absolute;
         display: block;
         z-index: -2;
         position: fixed;
     }
-    
-     .moveFloat1 {
+
+    .moveFloat1 {
         animation: animationFloat1 60s infinite;
 
     }
@@ -2086,63 +2532,65 @@ body {
         }
 
     }
+
+
+.moveFloat2 {
+    animation: animationFloat2 40s infinite;
+
 }
 
-   .moveFloat2 {
-        animation: animationFloat2 40s infinite;
-
+@keyframes animationFloat2 {
+    0% {
+        transform: translateY(70vh) translateX(80vw) rotate(0deg);
+    }
+    50% {
+        transform: translateY(60vh) translateX(85vw) rotate(360deg);
+    }
+    100% {
+        transform: translateY(70vh) translateX(80vw) rotate(0deg);
     }
 
-    @keyframes animationFloat2 {
-        0% {
-            transform: translateY(70vh) translateX(80vw) rotate(0deg);
-        }
-        50% {
-            transform: translateY(60vh) translateX(85vw) rotate(360deg);
-        }
-        100% {
-            transform: translateY(70vh) translateX(80vw) rotate(0deg);
-        }
+}
 
+
+
+.moveFloat4 {
+    animation: animationFloat4 60s infinite;
+
+}
+
+@keyframes animationFloat4 {
+    0% {
+        transform: translateY(40vh) translateX(0vw) rotate(0deg);
+    }
+    50% {
+        transform: translateY(20vh) translateX(5vw) rotate(360deg);
+    }
+    100% {
+        transform: translateY(40vh) translateX(0vw) rotate(0deg);
     }
 
+}
 
+.moveFloat5 {
+    animation: animationFloat5 60s infinite;
 
- .moveFloat4 {
-        animation: animationFloat4 60s infinite;
+}
 
+@keyframes animationFloat5 {
+    0% {
+        transform: translateY(80vh) translateX(-15vw) rotate(0deg);
+    }
+    50% {
+        transform: translateY(60vh) translateX(-20vw) rotate(360deg);
+    }
+    100% {
+        transform: translateY(80vh) translateX(-15vw) rotate(0deg);
     }
 
-    @keyframes animationFloat4 {
-        0% {
-            transform: translateY(40vh) translateX(0vw) rotate(0deg);
-        }
-        50% {
-            transform: translateY(20vh) translateX(5vw) rotate(360deg);
-        }
-        100% {
-            transform: translateY(40vh) translateX(0vw) rotate(0deg);
-        }
+}
 
-    }
 
- .moveFloat5 {
-        animation: animationFloat5 60s infinite;
-
-    }
-
-    @keyframes animationFloat5 {
-        0% {
-            transform: translateY(80vh) translateX(-15vw) rotate(0deg);
-        }
-        50% {
-            transform: translateY(60vh) translateX(-20vw) rotate(360deg);
-        }
-        100% {
-            transform: translateY(80vh) translateX(-15vw) rotate(0deg);
-        }
-
-    }
 }
 
 

@@ -25,15 +25,12 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body class="portfolio">
    <div class="float">
-   <img class="float1" src="images/float1.png" alt="floating element">
+   <img id="float1" class="float1" src="images/float1.png" alt="floating element">
     <img class="float2" src="images/float2.png" alt="floating element">
       <img class="float4" src="images/float4.png" alt="floating element">
-      <img class="float5" src="images/float5.png" alt="floating element">
-
-    
-    
+      <img class="float5" src="images/float5.png" alt="floating element">  
 </div>
     <div class="box_portfolio"></div>
     <div class="header">
@@ -98,10 +95,11 @@
         <div class="box_content">
             <h1> PORTFOLIO</h1>
             <div></div>
-            <img onmouseover="document.getElementById('huset').style.display = 'block';" onmouseout="document.getElementById('huset').style.display = 'none';" onclick="location.href='http://www.loreleiheckmann.com/huset/';" src="images/mock_ups/iPhone_%D0%A5_Mockup.png" class="mockup">
-            <div style="display:none;" id="huset" class="huset_expl">
+            <img onclick="location.href='http://www.loreleiheckmann.com/huset/';" src="images/mock_ups/iPhone_%D0%A5_Mockup.png" class="mockup">
+            <div id="huset" class="huset_expl">
                 <h2>WebApp</h2>
-                <p> Created and designed by me WebApp based on CMS, REST API and JSON</p>
+                <h3> UI / UX / Front-end</h3>
+                <p> WebApp build on CMS, REST API and JSON</p>
             </div>
         </div>
 
@@ -115,23 +113,24 @@
         <div class="box_portfolio2"></div>
         <div class="box_content2">
              <h2>New digital identity for artist NOAH KIN</h2>
-            <img onmouseover="document.getElementById('noah').style.visibility = 'visible';" onmouseout="document.getElementById('noah').style.visibility = 'hidden';" src="images/mock_ups/noah_mock_up.png" onclick="location.href='http://www.loreleiheckmann.com/exam/';" class="mockup_noah">
-           <div style="visibility:hidden;" id="noah" class="noah">
-                <p>In this project our challenge was to create new digital identity for the artist NOAH KIN which change his music sector. We've tried to create an identity which will apoint his new target audience. </p>
-                <p> Webiste is based on CMS, REST API and JSON. Coded by me.</p>
+            <img src="images/mock_ups/noah_mock_up.png" onclick="location.href='http://www.loreleiheckmann.com/exam/';" class="mockup_noah">
+           <div id="noah" class="noah">
+                <h3> UI / UX / Front-end</h3>
+                <p> Webiste is based on CMS, REST API and JSON.</p>
             </div>
         </div>
     </div>
 <div class="section3">
     <div class="box_portfolio3"></div>
       <div class="box_content3">
-            <img onmouseover="document.getElementById('faux').style.display = 'block';" onmouseout="document.getElementById('faux').style.display = 'none';" src="images/mock_ups/faux_resized.png" 
+            <img src="images/mock_ups/faux_resized.png" 
             onclick="location.href='http://loreleiheckmann.com/faux/';">
             
             
-           <div style="display:none;" id="faux" class="faux">
+           <div class="faux">
               <h2> Restaurant website</h2>
-               <p> Designed and coded by me restaurant website based on CMS, REST API and JSON</p>
+                 <h3> UI / UX / Front-end</h3>
+               <p> Webiste is based on CMS, REST API and JSON.</p>
             </div>
         </div>
         
@@ -139,38 +138,40 @@
 <div class= "section4">
        <div class="box_portfolio4"></div>
        <div class="box_content4">
-            <img onmouseover="document.getElementById('wedding').style.display = 'block';" onmouseout="document.getElementById('wedding').style.display = 'none';" src="images/mock_ups/weddin_mock_up.png" 
+            <img 
+            
+            src="images/mock_ups/weddin_mock_up.png" 
             onclick="location.href='http://www.loreleiheckmann.com/wedding/';">
+            
             
             <h2> SVG <br>
             Animations</h2>
-            
-            <div style="display:block;" id="wedding" class="wedding">
-               <p> During this project I've had a pleasure to make my first SVG animations.</p>
+             <div id="wedding" class="wedding">
+              <h3> UI / UX / Front-end</h3>
             </div>
+           
         </div> 
 </div>
+      <div class="section5">
+        <div class="box_portfolio5"></div>
+        <div class="box_content5">
+             <h2> RATOONG</h2>
+            <img src="images/mock_ups/sketch.png" 
+           onclick="location.href='https://www.behance.net/gallery/69649471/Winter-sport-company-prototype-website';">
+           <div class="ratoong">
+                <h3> UI / UX </h3>
+            </div>
+        </div>
+    </div>
     
-
-
-
     <div class="footer">
         <hr/>
         <footer> Marta Karolina Grzegowska 2018</footer>
     </div>
 
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-     <script src="portfolio.js">
-
-
-    </script>
-    <script src="script.js">
-
-
-    </script>
+    <script src="portfolio.js"> </script>
+    <script src="script.js">  </script>
 </body>
 
 </html>
